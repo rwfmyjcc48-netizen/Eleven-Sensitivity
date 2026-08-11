@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Eleven Sensitivity + Keygen</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      background: #0a0000;
+    }
+    body {
+      background: linear-gradient(135deg, #0a0000, #2a0000, #4a0000, #1a0000);
+      background-size: 400% 400%;
+      animation: darkRedMove 8s infinite alternate;
+      padding-top: 110px;
+      min-height: 100vh;
+      color: #fff;
+    }
+    @keyframes darkRedMove {
+      0% { background-position: 0% 0%; }
+      50% { background-position: 100% 100%; }
+      100% { background-position: 0% 0%; }
+    }
+
+    /* HEADER CỐ ĐỊNH */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999999;
+      background: rgba(10, 0, 0, 0.97);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      padding: 8px 16px 4px;
+      border-bottom: 2px solid #aa0000;
+      box-shadow: 0 4px 30px rgba(170, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: translateZ(0);
+      will-change: transform;
+      -webkit-transform: translateZ(0);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      touch-action: none !important;
+      pointer-events: auto;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    .header-top {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: 10px;
+      touch-action: none !important;
+    }
+    .logo {
+      width: 44px;
+      height: 44px;
+      background: linear-gradient(135deg, #ff0033, #ff2200, #cc0000);
+      background-size: 200% 200%;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 22px;
+      animation: logoGlow 2s infinite alternate;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+      flex-shrink: 0;
+      touch-action: none !important;
+      cursor: pointer;
+      transition: 0.1s;
+    }
+    .logo:active { transform: scale(0.92); }
+    @keyframes logoGlow {
+      0% { box-shadow: 0 0 10px #ff0000; }
+      100% { box-shadow: 0 0 30px #ff3300, 0 0 60px #aa0000; }
+    }
+    .title-group {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      touch-action: none !important;
+    }
+    .main-title {
+      font-size: 18px;
+      font-weight: 800;
+      background: linear-gradient(90deg, #ff0033, #ff3300, #ff6600, #ff0033);
+      background-size: 300% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbowText 3s linear infinite;
+      touch-action: none !important;
+    }
+    @keyframes rainbowText {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 300% 50%; }
+    }
+    .sub-title {
+      font-size: 11px;
+      color: #ff8888;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      touch-action: none !important;
+    }
+    .sub-title span { color: #ff3333; }
+
+    .tabs {
+      display: flex;
+      gap: 4px;
+      width: 100%;
+      margin-top: 4px;
+      justify-content: space-around;
+      touch-action: none !important;
+    }
+    .tab {
+      flex: 1;
+      padding: 5px 0;
+      text-align: center;
+      font-weight: 700;
+      font-size: 12px;
+      border-radius: 30px;
+      background: rgba(255,255,255,0.05);
+      color: #cc8888;
+      transition: 0.2s;
+      cursor: pointer;
+      border: 1px solid transparent;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .tab.active {
+      background: #cc0000;
+      color: white;
+      box-shadow: 0 0 20px rgba(204,0,0,0.5);
+      border-color: #ff4444;
+    }
+    .tab:active { transform: scale(0.94); }
+
+    .content {
+      padding: 16px 14px 100px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .page { display: none; animation: fade 0.25s; }
+    .page.active { display: block; }
+    @keyframes fade {
+      from { opacity: 0.2; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .grid-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .toggle-card {
+      background: rgba(30, 0, 0, 0.7);
+      backdrop-filter: blur(2px);
+      border-radius: 20px;
+      padding: 14px 10px;
+      text-align: center;
+      border: 1px solid #550000;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    .toggle-card .label {
+      font-weight: 700;
+      font-size: 13px;
+      color: #ffcccc;
+      margin-bottom: 8px;
+    }
+    .toggle-btn {
+      width: 52px;
+      height: 28px;
+      background: #3a1a1a;
+      border-radius: 30px;
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      transition: 0.2s;
+      touch-action: manipulation;
+      border: 1px solid #660000;
+      padding: 0;
+    }
+    .toggle-btn .dot {
+      width: 22px;
+      height: 22px;
+      background: #aa5555;
+      border-radius: 50%;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      transition: 0.2s;
+      box-shadow: 0 0 8px rgba(255,0,0,0.3);
+    }
+    .toggle-btn.on { background: #cc0000; border-color: #ff3333; }
+    .toggle-btn.on .dot { left: 27px; background: white; }
+
+    .game-selector {
+      margin-top: 24px;
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .game-card {
+      background: rgba(30,0,0,0.7);
+      border-radius: 24px;
+      padding: 12px 20px;
+      text-align: center;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: 0.15s;
+      touch-action: manipulation;
+      min-width: 120px;
+      backdrop-filter: blur(2px);
+    }
+    .game-card:active { transform: scale(0.94); }
+    .game-card.selected { border-color: #ff3333; background: rgba(200,0,0,0.3); }
+    .game-card img {
+      width: 56px;
+      height: 56px;
+      border-radius: 16px;
+      object-fit: cover;
+      background: #2a0000;
+      display: block;
+      margin: 0 auto 6px;
+      border: 1px solid #660000;
+    }
+    .game-card span { font-weight: 700; font-size: 15px; color: #ffcccc; }
+
+    .crown-wrapper {
+      text-align: center;
+      font-size: 60px;
+      margin: 10px 0 6px;
+      filter: drop-shadow(0 0 25px rgba(255,0,0,0.6));
+      animation: crownPulse 2s infinite alternate;
+    }
+    @keyframes crownPulse {
+      0% { transform: scale(1) rotate(-3deg); }
+      100% { transform: scale(1.08) rotate(3deg); }
+    }
+    .app-info {
+      background: rgba(20,0,0,0.8);
+      backdrop-filter: blur(4px);
+      border-radius: 28px;
+      padding: 20px 18px;
+      margin-top: 6px;
+      line-height: 2.4;
+      font-size: 16px;
+      border: 1px solid #660000;
+      color: #ffdddd;
+    }
+    .app-info b { color: #ff6666; }
+    .app-info a {
+      color: #ff6666;
+      font-weight: 600;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    .app-info a:active { opacity: 0.6; }
+
+    .price-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .price-item {
+      background: rgba(20,0,0,0.8);
+      border-radius: 18px;
+      padding: 18px 8px;
+      text-align: center;
+      border: 1px solid #660000;
+      font-weight: 700;
+      color: #ffcccc;
+    }
+    .price-item .days { font-size: 14px; color: #ff9999; }
+    .price-item .cost { font-size: 20px; color: #ff3333; }
+
+    .settings-item {
+      background: rgba(20,0,0,0.8);
+      border-radius: 18px;
+      padding: 16px 18px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #660000;
+      color: #ffcccc;
+    }
+
+    .key-section {
+      margin-top: 30px;
+      background: rgba(10,0,0,0.9);
+      border-radius: 28px;
+      padding: 20px 16px;
+      text-align: center;
+      border: 2px solid #aa0000;
+      touch-action: none;
+      user-select: none;
+    }
+    .key-section input {
+      width: 80%;
+      padding: 12px 16px;
+      border-radius: 40px;
+      border: 1px solid #660000;
+      font-size: 16px;
+      text-align: center;
+      outline: none;
+      background: #1a0000;
+      color: #ff8888;
+      touch-action: none;
+      /* Không cho nhấp nháy */
+      caret-color: #ff4444;
+    }
+    .key-section input:focus {
+      border-color: #ff4444;
+      box-shadow: 0 0 15px rgba(255,0,0,0.2);
+    }
+    .key-section button {
+      margin-top: 10px;
+      padding: 12px 32px;
+      border-radius: 40px;
+      border: none;
+      background: #cc0000;
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+      touch-action: none;
+      box-shadow: 0 0 20px rgba(204,0,0,0.3);
+    }
+    .key-section button:active { transform: scale(0.94); }
+    .key-status { margin-top: 10px; font-weight: 600; color: #ff8888; }
+
+    .admin-panel {
+      display: none;
+      margin-top: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 28px;
+      padding: 20px;
+      border: 2px solid #ff4444;
+      box-shadow: 0 0 30px rgba(255,0,0,0.2);
+    }
+    .admin-panel.show { display: block; }
+    .admin-panel h2 {
+      color: #ff6666;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+    .admin-panel select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 30px;
+      border: 1px solid #660000;
+      background: #1a0000;
+      color: white;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .admin-panel button {
+      padding: 10px 24px;
+      border: none;
+      border-radius: 30px;
+      font-weight: 700;
+      background: #cc0000;
+      color: white;
+      cursor: pointer;
+      margin: 4px;
+      box-shadow: 0 0 15px rgba(204,0,0,0.3);
+    }
+    .admin-panel button:active { transform: scale(0.94); }
+    .admin-panel .key-list {
+      background: #0a0000;
+      border-radius: 16px;
+      padding: 12px;
+      max-height: 200px;
+      overflow-y: auto;
+      margin-top: 10px;
+      border: 1px solid #440000;
+    }
+    .admin-panel .key-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 8px;
+      border-bottom: 1px solid #220000;
+      font-size: 14px;
+      color: #ffcccc;
+    }
+    .admin-panel .key-item .del {
+      color: #ff3333;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .admin-panel .key-item .del:active { opacity: 0.6; }
+
+    body.locked .page:not(#home) { opacity: 0.2; pointer-events: none; }
+    body.locked .tab:not(.active) { opacity: 0.2; pointer-events: none; }
+    body.locked .toggle-card { opacity: 0.3; pointer-events: none; }
+    body.locked .game-card { opacity: 0.3; pointer-events: none; }
+    body.locked .settings-item { opacity: 0.3; pointer-events: none; }
+    body.locked .price-item { opacity: 0.3; pointer-events: none; }
+    body.locked .app-info a { pointer-events: none; opacity: 0.3; }
+    .key-section { pointer-events: auto !important; opacity: 1 !important; }
+
+    @media (max-width: 450px) {
+      .main-title { font-size: 15px; }
+      .logo { width: 38px; height: 38px; font-size: 18px; }
+      .tab { font-size: 11px; padding: 5px 0; }
+      .toggle-card .label { font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER CỐ ĐỊNH -->
+<div class="header" id="header">
+  <div class="header-top">
+    <div class="logo" id="adminToggleLogo">⚡</div>
+    <div class="title-group">
+      <div class="main-title">Eleven Sensitivity</div>
+      <div class="sub-title"><span>✦</span> Sensitivity App Màu Cầu Vồng Động <span>✦</span> <span style="color:#ff3333;">App đen đỏ</span></div>
+    </div>
+  </div>
+  <div class="tabs" id="tabsContainer">
+    <button class="tab active" data-page="home">🏠 HOME</button>
+    <button class="tab" data-page="app">📱 APP</button>
+    <button class="tab" data-page="shop">🛒 SHOP</button>
+    <button class="tab" data-page="settings">⚙️ SETTINGS</button>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content" id="contentArea">
+  <div id="home" class="page active">
+    <div style="font-weight:600; font-size:15px; color:#ff9999; margin:4px 0 6px;">⚡ CHỨC NĂNG</div>
+    <div class="grid-2col" id="toggleGrid"></div>
+    <div style="margin-top:24px; font-weight:600; font-size:15px; color:#ff9999;">🎮 CHỌN GAME</div>
+    <div class="game-selector" id="gameSelector">
+      <div class="game-card" data-game="freefire">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23cc3300'/%3E%3Ctext x='14' y='64' font-size='40' fill='white' font-weight='bold'%3EFF%3C/text%3E%3C/svg%3E" alt="Free Fire">
+        <span>Free Fire</span>
+      </div>
+      <div class="game-card" data-game="freefiremax">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23aa0000'/%3E%3Ctext x='8' y='64' font-size='36' fill='white' font-weight='bold'%3EFF MAX%3C/text%3E%3C/svg%3E" alt="Free Fire Max">
+        <span>Free Fire Max</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="app" class="page">
+    <div class="crown-wrapper">👑</div>
+    <div class="app-info">
+      <b>📱 Name App:</b> Eleven Sensitivity<br>
+      <b>📌 Version:</b> 1.0.0<br>
+      <b>👤 Admin:</b> Elevenn<br>
+      <b>📞 Zalo Admin:</b><br>
+      <a href="https://Zalo.me/0924530113" target="_blank">https://Zalo.me/0924530113</a><br>
+      <b>📧 Zalo Eleven:</b><br>
+      <a href="https://Zalo.me/0924530113" target="_blank">Eleven: https://Zalo.me/0924530113</a>
+    </div>
+  </div>
+
+  <div id="shop" class="page">
+    <div style="font-weight:700; font-size:18px; text-align:center; margin:8px 0; color:#ff6666;">💎 BẢNG GIÁ KEY</div>
+    <div class="price-grid">
+      <div class="price-item"><div class="days">1 Ngày</div><div class="cost">20k</div></div>
+      <div class="price-item"><div class="days">1 Tuần</div><div class="cost">50k</div></div>
+      <div class="price-item"><div class="days">1 Tháng</div><div class="cost">100k</div></div>
+      <div class="price-item"><div class="days">1 Năm</div><div class="cost">250k</div></div>
+      <div class="price-item" style="grid-column: span 2;"><div class="days">Vĩnh Viễn</div><div class="cost">500k</div></div>
+    </div>
+  </div>
+
+  <div id="settings" class="page">
+    <div style="font-weight:600; font-size:16px; margin:6px 0; color:#ff9999;">⚙️ CÀI ĐẶT</div>
+    <div class="settings-item"><span>🔊 Âm thanh bíp</span> <span style="color:#ff3333;">Bật</span></div>
+    <div class="settings-item"><span>🌓 Chế độ tối</span> <span style="color:#666;">Đang bật</span></div>
+    <div class="settings-item"><span>🔄 Reset mặc định</span> <span style="color:#ff3333;">Nhấn để reset</span></div>
+  </div>
+
+  <!-- KEY INPUT USER -->
+  <div class="key-section" id="keySection">
+    <div style="font-weight:700; font-size:16px; margin-bottom:8px; color:#ff8888;">🔐 NHẬP KEY KÍCH HOẠT</div>
+    <input type="text" id="keyInput" placeholder="Nhập key ..." autocomplete="off" spellcheck="false">
+    <br>
+    <button id="keyBtn">XÁC NHẬN</button>
+    <div id="keyStatus" class="key-status"></div>
+  </div>
+
+  <!-- ADMIN PANEL (ẩn, chỉ hiện khi click logo 5 lần) -->
+  <div class="admin-panel" id="adminPanel">
+    <h2>👑 QUẢN LÝ KEY</h2>
+    <select id="durationSelect">
+      <option value="1ngay">1 Ngày (20k)</option>
+      <option value="1tuan">1 Tuần (50k)</option>
+      <option value="1thang">1 Tháng (100k)</option>
+      <option value="1nam">1 Năm (250k)</option>
+      <option value="vinhvien">Vĩnh Viễn (500k)</option>
+    </select>
+    <button id="genKeyBtn">🔑 TẠO KEY MỚI</button>
+    <div id="genResult" style="margin-top:8px; color:#66ff66; font-weight:600;"></div>
+    <div class="key-list" id="keyList"></div>
+    <button id="closeAdminBtn" style="background:#333; margin-top:10px;">🔒 ĐÓNG</button>
+  </div>
+</div>
+
+<script>
+  (function() {
+    // ---- CẤU HÌNH ----
+    const TOGGLES = [
+      "Sensitivity Touch","Haptic Override","Assistive Engine","Micro-Gesture Fix",
+      "A11y Core Bypass","Velocity Scaling","Pixel Friction Reducer","Sampling Rate Boost",
+      "Deadzone Eliminator","Dynamic Anchor","Precision Drag Modifier","Y-Axis Amplifier"
+    ];
+
+    let isUnlocked = false;
+    let isAdmin = false;
+    let clickCount = 0;
+    let clickTimer = null;
+    const keysDB = JSON.parse(localStorage.getItem('eleven_keys')) || {};
+
+    // DOM
+    const body = document.body;
+    const adminPanel = document.getElementById('adminPanel');
+    const keyList = document.getElementById('keyList');
+    const genKeyBtn = document.getElementById('genKeyBtn');
+    const durationSelect = document.getElementById('durationSelect');
+    const genResult = document.getElementById('genResult');
+    const closeAdminBtn = document.getElementById('closeAdminBtn');
+
+    const toggleGrid = document.getElementById('toggleGrid');
+    const gameCards = document.querySelectorAll('.game-card');
+    const tabs = document.querySelectorAll('.tab');
+    const pages = {
+      home: document.getElementById('home'),
+      app: document.getElementById('app'),
+      shop: document.getElementById('shop'),
+      settings: document.getElementById('settings')
+    };
+    const keyInput = document.getElementById('keyInput');
+    const keyBtn = document.getElementById('keyBtn');
+    const keyStatus = document.getElementById('keyStatus');
+
+    // ---- LƯU KEY ----
+    function saveKeys() {
+      localStorage.setItem('eleven_keys', JSON.stringify(keysDB));
+    }
+
+    function generateKey(length = 12) {
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+      let result = '';
+      for (let i = 0; i < length; i++) {
+        result += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      return result;
+    }
+
+    function createKey(duration) {
+      const key = generateKey();
+      const now = new Date();
+      let expiry = null;
+      const durations = {
+        '1ngay': 1,
+        '1tuan': 7,
+        '1thang': 30,
+        '1nam': 365,
+        'vinhvien': null
+      };
+      if (durations[duration] !== null) {
+        const d = new Date(now);
+        d.setDate(d.getDate() + durations[duration]);
+        expiry = d.toISOString();
+      }
+      keysDB[key] = {
+        created: now.toISOString(),
+        expiry: expiry,
+        status: 'active',
+        duration: duration
+      };
+      saveKeys();
+      renderKeyList();
+      return key;
+    }
+
+    function deleteKey(key) {
+      if (keysDB[key]) {
+        delete keysDB[key];
+        saveKeys();
+        renderKeyList();
+        return true;
+      }
+      return false;
+    }
+
+    function checkKey(key) {
+      const data = keysDB[key];
+      if (!data) return { valid: false, msg: 'Key không tồn tại!' };
+      if (data.status === 'revoked') return { valid: false, msg: 'Key đã bị thu hồi!' };
+      if (data.expiry) {
+        const now = new Date();
+        const exp = new Date(data.expiry);
+        if (now > exp) return { valid: false, msg: 'Key đã hết hạn!' };
+      }
+      return { valid: true, msg: '✅ Key hợp lệ!' };
+    }
+
+    function renderKeyList() {
+      const keys = Object.keys(keysDB);
+      if (keys.length === 0) {
+        keyList.innerHTML = '<div style="color:#666; text-align:center;">Chưa có key nào</div>';
+        return;
+      }
+      let html = '';
+      keys.forEach(k => {
+        const data = keysDB[k];
+        const expiry = data.expiry ? new Date(data.expiry).toLocaleDateString('vi') : 'Vĩnh viễn';
+        const status = data.status === 'active' ? '🟢' : '🔴';
+        html += `<div class="key-item">
+          <span>${k} - ${expiry} ${status}</span>
+          <span class="del" data-key="${k}">🗑️ Xoá</span>
+        </div>`;
+      });
+      keyList.innerHTML = html;
+      keyList.querySelectorAll('.del').forEach(el => {
+        el.addEventListener('click', function() {
+          const k = this.dataset.key;
+          if (confirm(`Xoá key ${k}?`)) {
+            deleteKey(k);
+          }
+        });
+      });
+    }
+
+    // ---- MỞ ADMIN BẰNG CÁCH CLICK LOGO 5 LẦN ----
+    document.getElementById('adminToggleLogo').addEventListener('click', function() {
+      clickCount++;
+      if (clickTimer) clearTimeout(clickTimer);
+      clickTimer = setTimeout(() => {
+        clickCount = 0;
+      }, 1000);
+
+      if (clickCount >= 5) {
+        clickCount = 0;
+        clearTimeout(clickTimer);
+        // Chuyển trạng thái admin
+        isAdmin = !isAdmin;
+        if (isAdmin) {
+          adminPanel.classList.add('show');
+          renderKeyList();
+          // Rung nhẹ logo
+          this.style.animation = 'none';
+          setTimeout(() => { this.style.animation = ''; }, 10);
+        } else {
+          adminPanel.classList.remove('show');
+        }
+      }
+    });
+
+    // ---- ĐÓNG ADMIN ----
+    closeAdminBtn.addEventListener('click', function() {
+      isAdmin = false;
+      adminPanel.classList.remove('show');
+    });
+
+    // ---- TẠO KEY ----
+    genKeyBtn.addEventListener('click', function() {
+      if (!isAdmin) return;
+      const duration = durationSelect.value;
+      const newKey = createKey(duration);
+      genResult.textContent = `✅ Key mới: ${newKey}`;
+      // Tự động copy key vào clipboard
+      navigator.clipboard.writeText(newKey).then(() => {
+        genResult.textContent = `✅ Key mới: ${newKey} (đã copy)`;
+      }).catch(() => {});
+      setTimeout(() => { genResult.textContent = ''; }, 5000);
+    });
+
+    // ---- TOGGLE ----
+    TOGGLES.forEach(name => {
+      const card = document.createElement('div');
+      card.className = 'toggle-card';
+      const label = document.createElement('div');
+      label.className = 'label';
+      label.textContent = name;
+      const btn = document.createElement('button');
+      btn.className = 'toggle-btn';
+      btn.setAttribute('aria-label', `Toggle ${name}`);
+      const dot = document.createElement('span');
+      dot.className = 'dot';
+      btn.appendChild(dot);
+      btn.dataset.state = 'off';
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (!isUnlocked) {
+          keyStatus.textContent = '⚠️ Vui lòng nhập key kích hoạt trước!';
+          keyStatus.style.color = '#ff3333';
+          return;
+        }
+        const isOn = this.dataset.state === 'on';
+        this.dataset.state = isOn ? 'off' : 'on';
+        this.classList.toggle('on', !isOn);
+        try {
+          const ctx = new (window.AudioContext || window.webkitAudioContext)();
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.frequency.value = 880;
+          osc.type = 'sine';
+          gain.gain.value = 0.06;
+          osc.start();
+          setTimeout(() => { osc.stop(); ctx.close(); }, 100);
+        } catch(e) {}
+      });
+      card.appendChild(label);
+      card.appendChild(btn);
+      toggleGrid.appendChild(card);
+    });
+
+    // ---- GAME ----
+    gameCards.forEach(card => {
+      card.addEventListener('click', function(e) {
+        if (!isUnlocked) {
+          keyStatus.textContent = '⚠️ Cần key kích hoạt để chọn game!';
+          keyStatus.style.color = '#ff3333';
+          return;
+        }
+        gameCards.forEach(c => c.classList.remove('selected'));
+        this.classList.add('selected');
+        const game = this.dataset.game;
+        let url = game === 'freefire' ? 'freefire://' : 'freefiremax://';
+        const iframe = document.createElement('iframe');
+        iframe.style.display = 'none';
+        iframe.src = url;
+        document.body.appendChild(iframe);
+        setTimeout(() => {
+          if (document.hidden !== undefined) {
+            window.location.href = 'https://apps.apple.com/app/free-fire/id1300146617';
+          }
+          iframe.remove();
+        }, 800);
+      });
+    });
+
+    // ---- TAB ----
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        const pageId = this.dataset.page;
+        if (!isUnlocked && pageId !== 'home') {
+          keyStatus.textContent = '⚠️ Cần key kích hoạt để truy cập!';
+          keyStatus.style.color = '#ff3333';
+          return;
+        }
+        tabs.forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+        Object.keys(pages).forEach(key => {
+          pages[key].classList.toggle('active', key === pageId);
+        });
+        document.getElementById('contentArea').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // ---- USER KEY ----
+    keyBtn.addEventListener('click', function() {
+      const input = keyInput.value.trim().toUpperCase();
+      if (!input) {
+        keyStatus.textContent = '⚠️ Vui lòng nhập key!';
+        keyStatus.style.color = '#ff3333';
+        return;
+      }
+      const result = checkKey(input);
+      keyStatus.textContent = result.msg;
+      keyStatus.style.color = result.valid ? '#66ff66' : '#ff3333';
+      if (result.valid) {
+        isUnlocked = true;
+        body.classList.remove('locked');
+        keyInput.value = '';
+        document.querySelectorAll('.tab').forEach(t => t.style.pointerEvents = 'auto');
+        document.querySelectorAll('.toggle-card, .game-card, .settings-item, .price-item').forEach(el => {
+          el.style.opacity = '1';
+          el.style.pointerEvents = 'auto';
+        });
+        document.getElementById('keySection').style.display = 'none';
+      } else {
+        keyInput.value = '';
+        setTimeout(() => { keyStatus.textContent = ''; }, 2500);
+      }
+    });
+
+    keyInput.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        keyBtn.click();
+      }
+    });
+
+    // Ngăn nhấp nháy khi copy/dán
+    keyInput.addEventListener('focus', function() {
+      this.setSelectionRange(0, this.value.length);
+    });
+
+    // ---- KHỞI TẠO ----
+    body.classList.add('locked');
+    if (!keysDB['ELEVEN2026']) {
+      keysDB['ELEVEN2026'] = {
+        created: new Date().toISOString(),
+        expiry: null,
+        status: 'active',
+        duration: 'vinhvien'
+      };
+      saveKeys();
+    }
+    renderKeyList();
+
+    // ---- CHẶN KÉO HEADER ----
+    const header = document.getElementById('header');
+    header.addEventListener('touchmove', function(e) {
+      e.preventDefault();
+    }, { passive: false });
+
+    document.addEventListener('touchmove', function(e) {
+      if (e.target.closest('.header')) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+    console.log('💀 Devils Will Rise – Admin mở bằng logo (5 lần click)');
+  })();
+</script>
+</body>
+</html>
